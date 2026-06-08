@@ -133,9 +133,16 @@ function runInteractive() {
   });
 }
 
-// ===================== Command mode =====================
+// ===================== Entry =====================
 const cmd = process.argv[2];
 const arg = process.argv[3];
+
+// No command → interactive mode
+if (!cmd) {
+  runInteractive();
+  process.exit(0);
+}
+
 const data = load();
 
 switch(cmd) {
@@ -177,7 +184,6 @@ switch(cmd) {
     node cli.js done-task 1  完成任务1
     node cli.js settings     查看设置
     `);
-    if (!cmd || cmd === 'help') break;
-    // No command = interactive mode
-    if (process.argv.length <= 2) runInteractive();
+    break;
+  }
 }
