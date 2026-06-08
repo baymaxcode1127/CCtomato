@@ -393,6 +393,26 @@ body {
 }
 .setting-row input:focus { border-color: #FF1493; box-shadow: 0 0 8px rgba(255,20,147,0.15); }
 
+/* ====== Prompt Dialog ====== */
+.prompt-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #FFD0E0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.prompt-input:focus { border-color: #FF1493; box-shadow: 0 0 8px rgba(255,20,147,0.15); }
+.modal-msg {
+  font-size: 13px;
+  color: var(--text-mid);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
