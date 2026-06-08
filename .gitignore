@@ -1,0 +1,17 @@
+# Compiled output
+out/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifact (optional — keep if you want to distribute)
+# pomodoro.jar
